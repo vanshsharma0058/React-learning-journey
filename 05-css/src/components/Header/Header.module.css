@@ -1,0 +1,22 @@
+.header {
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header h3 {
+  color: rgb(61, 53, 53);
+}
+.btn {
+  padding: 8px 16px;
+  background: rgb(197, 46, 46);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
