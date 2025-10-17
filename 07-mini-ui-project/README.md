@@ -1,18 +1,91 @@
-# React + Vite
+## 🌐 Mini React Website Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **mini website project** built using **React** and **Tailwind CSS**, focusing on reusable components, clean folder structure, and smooth data flow between components.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React JS** – For building UI components
+- 🎨 **Tailwind CSS** – For modern, responsive styling
+- 🧩 **Component-Based Architecture** – To ensure reusability and modularity
+- 🧱 **Feature-Based + Atomic Structure** – To maintain scalability and better project organization
 
-## React Compiler
+## ## 📂 Project Structure
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The project is organized to keep UI elements modular and scalable.  
+Each page (like `Page1`, `Page2`) contains its own set of related components.
 
-Note: This will impact Vite dev & build performances.
+07-mini-ui-project/
+│
+├── public/ # Static files (favicon, index.html, etc.)
+│
+├── src/
+│ ├── assets/ # Images, icons, and static resources
+│ │
+│ ├── components/ # All reusable and page-specific components
+│ │ │
+│ │ ├── Page1/ # Components used in Page 1
+│ │ │ ├── Arrow.jsx
+│ │ │ ├── Herotext.jsx
+│ │ │ ├── LeftContent.jsx
+│ │ │ ├── navbar.jsx
+│ │ │ ├── Page1content.jsx
+│ │ │ ├── Rightcard.jsx
+│ │ │ ├── Rightcardcontent.jsx
+│ │ │ ├── RightContent.jsx
+│ │ │ └── section1.jsx
+│ │ │
+│ │ └── Page2/ # Components used in Page 2 (future expansion)
+│ │
+│ ├── App.jsx # Main App component (routes and layout)
+│ ├── index.css # Tailwind CSS and global styles
+│ └── main.jsx # React entry point (renders App component)
+│
+├── package.json # Project dependencies and scripts
+└── tailwind.config.js # Tailwind CSS configuration
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 Data Flow (Parent → Child)
+
+This project demonstrates how to **pass data from a parent component to a child component** using **React props**.
+
+**Example:**
+
+```jsx
+// ParentComponent.jsx
+import ChildComponent from "./ChildComponent";
+
+function ParentComponent() {
+  const message = "Hello from Parent!";
+
+  return <ChildComponent text={message} />;
+}
+
+export default ParentComponent;
+
+// ChildComponent.jsx
+function ChildComponent({ text }) {
+  return <h2>{text}</h2>;
+}
+
+export default ChildComponent;
+```
+
+-✅ Data in React flows unidirectionally (top-down) — meaning parent components pass data to children using props.
+
+## 🛠️ Installation & Setup
+
+1. Clone the repository:
+   git clone https://github.com/yourusername/07-mini-ui-project.git
+
+2.Navigate to the project directory:
+
+cd 07-mini-ui-project
+
+3.Install dependencies:
+
+npm install
+
+4.Start the development server:
+
+npm run dev
