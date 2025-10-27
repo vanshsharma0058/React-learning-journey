@@ -1,0 +1,1 @@
+## In this project, we will create a simple counter application using the `useState` hook in React. The application will have three buttons: Incremnent, Decrement and Reset. The counter value will be displayed and updated based on user interactions with the buttons using the `useState` hook to manage the state of the counter.
