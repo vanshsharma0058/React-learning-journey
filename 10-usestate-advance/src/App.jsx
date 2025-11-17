@@ -18,7 +18,7 @@ const App = () => {
 
   const [num, setnum] = useState({ user: "Sarthak", age: 20 });
   const btnclicked = () => {
-    setnum((perv) => ({ ...num, age: 50 }));
+    setnum((perv) => ({ ...prev, age: 50 }));
   };
 
   return (
