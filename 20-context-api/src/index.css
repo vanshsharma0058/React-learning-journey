@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.light {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 26px;
+  align-items: center;
+  background-color: darkgray;
+}
+.dark {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 26px;
+  align-items: center;
+  background-color: rgb(29, 28, 28);
+  color: azure;
+}
+
+.nav2 {
+  display: flex;
+  gap: 20px;
+  font-size: large;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.nav2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ...existing code... */
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 800px;
+}
+.toggle {
+  background-color: gray;
+  padding: 3px 5px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+}
+.services {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+.services a {
+  text-decoration: none;
+  color: inherit;
+
+  background-color: chocolate;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+  background-color: #444343;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: chocolate;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
