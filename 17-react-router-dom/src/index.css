@@ -1,0 +1,35 @@
+/* good reset */
+* {
+  box-sizing: border-box;
+  color: beige; /* keep text color here if you like */
+  margin: 0; /* optional: many people reset margins globally */
+  padding: 0; /* optional: reset padding globally */
+}
+
+/* explicitly set body background, not every element */
+body {
+  background-color: black;
+}
+
+/* nav full-width + styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(9, 53, 53);
+  width: 100%; /* usually not required, but explicit helps */
+}
+
+/* layout for the right section */
+.sec {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  font: 600;
+}
