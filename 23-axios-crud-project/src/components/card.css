@@ -1,0 +1,106 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.top {
+  flex-grow: 1; /* content grows */
+  min-width: 0; /* allow text to wrap properly */
+}
+
+.top h3 {
+  margin-bottom: 10px;
+}
+.top p {
+  color: gray;
+}
+.bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+.bottom button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-attachment: fixed;
+  color: white;
+}
+
+.id {
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  background-color: rgb(20, 192, 14);
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  line-height: 30px;
+  padding: 5px;
+}
+.dlt {
+  background-color: red;
+}
+.edit {
+  background-color: blue;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.field input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 200px;
+}
+.field button {
+  background-color: green;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  .field input {
+    width: 50%;
+  }
+  .field button {
+    width: 100px;
+  }
+}
